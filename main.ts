@@ -1,10 +1,10 @@
 input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
-    led.unplot(0, 4)
+    led.unplot(2, 2)
 })
-led.plotBarGraph(
-0,
-5
-)
+input.onButtonEvent(Button.B, input.buttonEventClick(), function () {
+    led.plot(2, 2)
+})
+led.plot(2, 2)
 basic.forever(function () {
 	
 })
